@@ -12,13 +12,28 @@ const containerDom = document.querySelector('.container');
 for ( let i = 1; i <= 100; i++ ) {
 
     const squareDom = `<div class="square">${i}</div>`;
-    console.log(i)
+   
 
     containerDom.innerHTML += squareDom;
 
-    if(i % 3 == 0) {
+    if( i % 3 == 0) {
         console.log('Frizzy')
+        
     }
 
+    else if( i % 5 == 0){
+        console.log('Buzz')
+    }
+
+    else{
+        console.log(i)
+
+    }
+
+    
+
 }
+
+
+
 
