@@ -8,6 +8,7 @@
 
 
 const containerDom = document.querySelector('.container');
+const numberDom = document.querySelector('.square');
 
 for ( let i = 1; i <= 100; i++ ) {
 
@@ -18,8 +19,6 @@ for ( let i = 1; i <= 100; i++ ) {
 
     if( i % 15 == 0) {
         console.log('FrizzBuzz')
-        
-        
     }
 
      else if( i % 3 == 0){
@@ -38,6 +37,8 @@ for ( let i = 1; i <= 100; i++ ) {
         console.log(i)
 
     }
+
+
 
     
 
