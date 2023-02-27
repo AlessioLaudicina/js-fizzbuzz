@@ -8,7 +8,7 @@
 
 
 
-.square{
+.box{
      width: 80px; 
      height: 80px; 
      margin: 10px;
@@ -16,4 +16,16 @@
      justify-content: center; 
      align-items: center;
      background-color: darkgoldenrod;
+}
+
+.box-fizz{
+    background-color: red;
+}
+
+.box-buzz{
+    background-color: green;
+}
+
+.box-fizzbuzz{
+    background-color: violet;
 }

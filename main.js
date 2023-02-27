@@ -1,3 +1,4 @@
+
 /* 
 - un programma che stampi in console i numeri da 1 a 100,
 - ma che per i multipli di 3 stampi “Fizz” al posto del numero 
@@ -8,39 +9,38 @@
 
 
 const containerDom = document.querySelector('.container');
-const numberDom = document.querySelector('.square');
+
 
 for ( let i = 1; i <= 100; i++ ) {
-
-    const squareDom = `<div class="square">${i}</div>`;
-   
-
-    containerDom.innerHTML += squareDom;
+    const box = document.createElement('div')
+    box.classList.add('box')
 
     if( i % 15 == 0) {
-        console.log('FrizzBuzz')
+        console.log('FrizzBuzz');
+        box.classList.add('box-fizzbuzz');
+        box.append('FrizzBuzz');
     }
 
      else if( i % 3 == 0){
         console.log('Frizzy')
+        box.classList.add('box-fizz');
+        box.append('Frizz');
     }
 
     else if( i % 5 == 0){
         console.log('Buzz')
+        box.classList.add('box-buzz');
+        box.append('Buzz');
 
     }
-
-
-    
 
     else{
         console.log(i)
+        box.append(i);
 
     }
 
-
-
-    
+    containerDom.append(box)
 
 }
 
